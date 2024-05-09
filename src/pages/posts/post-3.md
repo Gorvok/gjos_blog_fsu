@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Ease Of Use
 author: Gjo.Dev
 description: "Astro is easy to use"

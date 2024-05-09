@@ -1,10 +1,12 @@
 ---
-title: Astro.js: Elevate Your Web Development Game
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "Astro.js: Elevate Your Web Development Game"
 pubDate: 2024-05-08
 description: "This is the first post of my new Astro blog."
 author: Gjo.Dev
-tags: ["astro", "blogging", "learning in public"]
+tags: [astro, blogging, "learning in public"]
 ---
+
 # Hey there, Digital Pioneers!
 
 Published on: 2024-05-08

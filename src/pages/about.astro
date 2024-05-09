@@ -1,4 +1,5 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = 'About Gjo';
 
 const identity = {
@@ -14,19 +15,23 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "Mon
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor = "rgb(0, 156, 199)";
+const fontWeight = "bold";
+const textCase = "capitalize";
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blog</a>
+<BaseLayout>
+        <style define:vars={{skillColor, fontWeight, textCase}}>
+            h1 {
+              color: rgb(50, 207, 250);
+              font-size: 4rem;
+            }
+            .skill {
+                color: var(--skillColor);
+                font-weight: var(--fontWeight);
+                text-transform: var(--textCase);
+            }
+          </style>
 		<h1>{pageTitle}</h1>
         <h2>Full Stack Developer</h2>
         {happy && <p>I am a full stack developer with a passion for creating web applications. I have experience with a variety of technologies including React, Node.js, Express, and MongoDB. I am always looking to learn new things and improve my skills. I am currently working on a project that uses React, Node.js, and MongoDB to create a web application that allows users to create and share recipes.</p>}
@@ -43,7 +48,9 @@ const goal = 3;
         </ul>
         <h3>My Skills Are:</h3>
         <ul>
-            {skills.map((skill) => <li>{skill}</li>)}
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
-    </body>
-</html>
+        <script>
+            import "../scripts/menu.js";
+          </script>
+    </BaseLayout>
