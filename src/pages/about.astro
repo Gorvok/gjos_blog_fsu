@@ -1,18 +1,49 @@
+---
+const pageTitle = 'About Gjo';
+
+const identity = {
+    firstName: "Gjo",
+    country: "United States",
+    state: "Florida",
+    occupation: "Full Stack Developer",
+    hobbies: ["Coding", "Gaming", "Reading"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB", "Git", "Astro", "Next", "Docker"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
+---
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>About</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/blog">Blog</a>
-		<h1>About Gjo</h1>
+		<h1>{pageTitle}</h1>
         <h2>Full Stack Developer</h2>
-        <p>I am a full stack developer with a passion for creating web applications. I have experience with a variety of technologies including React, Node.js, Express, and MongoDB. I am always looking to learn new things and improve my skills. I am currently working on a project that uses React, Node.js, and MongoDB to create a web application that allows users to create and share recipes.</p>
+        {happy && <p>I am a full stack developer with a passion for creating web applications. I have experience with a variety of technologies including React, Node.js, Express, and MongoDB. I am always looking to learn new things and improve my skills. I am currently working on a project that uses React, Node.js, and MongoDB to create a web application that allows users to create and share recipes.</p>}
         <p>This site will be updated as I continue on with my current class at Full Sail University!</p>
+        {finished && <p>I am currently working on my class at Full Sail University!</p>}
+        {goal === 3 ? <p>My goal is to learn as much as I can and become a better developer.</p> : <p>My goal is to learn as much as I can and become a better developer. I am currently working on a project that uses React, Node.js, and MongoDB to create a web application that allows users to create and share recipes.</p>}
+        <h3>Here are a few fact's about me</h3>
+        <ul>
+            <li>My name is {identity.firstName}.</li>
+            <li>I lve in {identity.state} in the {identity.country} and I work as a {identity.occupation}.</li>
+            {identity.hobbies.length >= 3 &&
+                <li>My Hobbies are {identity.hobbies[0]}, {identity.hobbies[1]}, and {identity.hobbies[2]}.</li>
+            }
+        </ul>
+        <h3>My Skills Are:</h3>
+        <ul>
+            {skills.map((skill) => <li>{skill}</li>)}
+        </ul>
     </body>
 </html>
