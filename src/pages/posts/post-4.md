@@ -6,7 +6,7 @@ description: "I AM VITE"
 pubDate: 2024-05-08
 tags: ["astro", "successes"]
 ---
-# Discovering the Versatility of Vite for Modern Web Projects
+# Vite
 
 Published on: 2024-05-13
 

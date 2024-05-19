@@ -8,8 +8,6 @@ tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 ## Learning Astro
 
-# Embracing the Power of TailwindCSS for Modern Web Development
-
 Published on: 2024-05-10
 
 Hey there, Digital Pioneers!

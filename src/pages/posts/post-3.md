@@ -6,7 +6,7 @@ description: "Next.js is awesome"
 pubDate: 2024-05-08
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# Exploring the Magic of Next.js for Full-Stack Development
+# Next.js
 
 Published on: 2024-05-12
 
