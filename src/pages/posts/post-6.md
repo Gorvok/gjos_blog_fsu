@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Best Practices for Using APIs Within React
+title: Mastering Multi-Platform Deployment
 author: Gjo.Dev
 description: "Mastering Multi-Platform Deployment:"
 pubDate: 2024-05-20
